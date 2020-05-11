@@ -1,3 +1,7 @@
+Available here
+
+https://rado08271.github.io/heatmaps/
+
 # heatmaps
 
 Using heat library
