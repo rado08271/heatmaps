@@ -11,7 +11,7 @@ function parseInput(data) {
 
     lines.forEach((i) => parseLines(i));
 
-	console.log(lines);
+	console.log(lines); 
     function parseLines(line) {
         var parsed = line.split('|');
         if (parsed.length < 3){
@@ -32,10 +32,8 @@ function parseInput(data) {
 }
 
 function loadMap() {
-    addressPoints = parseInput(document.getElementById('data').value);
-    document.getElementById('configMenu').hidden = true;
-    document.getElementById('mapContainer').hidden = false;
-
+    var addressPoints = parseInput(document.getElementById('data').value);
+    
     var map = L.map('map').setView([parseFloat(document.getElementById('lat').value), parseFloat(document.getElementById('lon').value)], 15);
 
     console.log(addressPoints);
