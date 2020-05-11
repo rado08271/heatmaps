@@ -1,0 +1,159 @@
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+#configMenu {
+    position: absolute;
+    width: 100vh;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#author {
+    /*position: absolute;*/
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#configBox {
+    position: absolute;
+    background: #cecece;
+    display: block;
+    border-radius: 10px;
+    padding: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#configBox:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#configBox:active {
+    box-shadow: 0 4px 8px 0 rgba(255, 115, 91, 0.2), 0 6px 20px 0 rgba(255, 115, 91, 0.76);
+}
+
+#configBox input, textarea {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 16px;
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    color: #262626;
+    background: transparent;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+fieldset {
+    display: inline-block;
+}
+
+textarea {
+    text-align: left;
+    column-count: 3;
+    -webkit-column-count: 3;
+}
+
+#configBox input[type="number"]:focus {
+    border: none;
+    background: #aaa;
+    color: #000;
+    border-radius: 20px;
+}
+
+#configBox input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+textarea::-webkit-resizer {
+    -webkit-appearance: none;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+#configBox input[type="button"] {
+    color: #262626;
+    transform: scale(0.8);
+    border: 2px solid #262626;
+}
+
+#configBox input[type="button"]:hover {
+    transform: scale(1);
+    background: #262626;
+    color: #aaa;
+}
+
+#configBox input[type="checkbox"] {
+    transform: scale(1);
+    background: #262626;
+    color: #aaa;
+    bookmark-label: none;
+}
+
+select {
+    width: 50%;
+    background: #262626;
+    color: #aaa;
+    outline: none;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    float: right;
+}
+
+select:active {
+    outline: none;
+    border: none;
+}
+
+.line {
+    width: 100%;
+}
+
+#configBox input[type="checkbox"] {
+    width: 16px;
+    transform: scale(1.5);
+    background: #262626;
+    color: #262626;
+    bookmark-label: none;
+}
+
+label {
+    text-align: left;
+}
+
+body {
+    color: #262626;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+#infoContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+}
+
+#infoText {
+    font-size: 3em;
+    color: #ff735b;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet.heat demo</title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+</head>
+<body>
+<div id="container">
+    <div id="mapContainer" hidden>
+        <div id="map"></div>
+        <div id="gradient">
+
+        </div>
+    </div>
+    <h1 id="author" onclick="{document.getElementById('author').hidden=true}">Created by Radoslav Figura</h1>
+    <div id="configMenu">
+        <div id="configBox">
+            <fieldset>
+                <legend>Set center points for heatmap</legend>
+                <input type='number' id="lat" placeholder="Latitude"/>
+                <input type='number' id="lon" placeholder="Longitude"/>
+                <textarea id="data" placeholder=""></textarea>
+                <input type='button' id="save" value="Set center point" onclick="loadMap()"/>
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+<script src="dist/leaflet.heat.js"></script>
+<script src="dataParser.js"></script>
+<script src="heatmaps.js"></script>
+
+</body>
+</html>
